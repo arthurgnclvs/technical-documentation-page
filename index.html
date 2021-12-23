@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav id='navbar'>
+    <h1>Python Documentation</h1>
+    <header>
+    <ul>
+      <li><a href="#introduction" class='nav-link'>Introduction</a>
+      <li><a href="#hello_world" class='nav-link'>Hello World</a>
+      <li><a href="#variables" class='nav-link'>Variables</a>
+      <li><a href="#input" class='nav-link'>Input</a>
+      <li><a href="#if_statements" class='nav-link'>if Statements</a>
+      <li><a href="#loops" class='nav-link'>Loops</a>
+    <ul>
+      </header>
+  </nav>
+  <main id='main-doc'>
+    <section class='main-section' id='introduction'>
+      <header id='introduction'>
+        <h1>Introduction</h1>
+      </header>
+      <article>
+      <p>
+        Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.<p>
+        <p>
+          The Python interpreter is easily extended with new functions and data types implemented in C or C++ (or other languages callable from C). Python is also suitable as an extension language for customizable applications.
+        </p>
+       <article>
+    </section>
+      
+    <section class='main-section' id='hello_world'>
+      <header id='hello-world'>
+        <h1>Hello World</h1>
+      </header>
+      <article>
+      <p>To get started with Python, you're going to write a simple line of code to write a phrase on your screen.
+      <li>Write the line: <code>print('Hello World!')</code>
+        <li>The output should be: <span class="output">Hello World!</span>
+      </article>
+    </section>
+    
+    <section class='main-section' id='variables'>
+      <header id='variables'>
+        <h1>Variables</h1>
+      </header>
+      <article>
+      <p>A variable is used to store information in the memory, whether that be a string, a number, a boolean and so on.
+      <p>Usually a variable is written in all lower letters, and in case of two words or more, only the first should be written with lower letter, and no spacing.
+      <li>Example:
+        <code>myVar = 5</code></li>
+      <p>And you can write the variable value with:
+        <code>print(myVar)</code>
+        <li>Output: <span class='output'>5</span>
+      </article>
+    </section>
+    
+    <section class='main-section' id='input'>
+      <header id='input'>
+        <h1>Input</h1>
+      </header>
+      <article>
+      <p>The command "input" allow the user to, as it says, input any keys depeding on their type.
+        <p>By writing only <code>input('Write something here!')</code>, it will allow the user to use any type of value.
+        <li>It is possible to restrict to some by writing <code>str(input('Write a string here!'))</code>, as this will only allow to input a string.
+        <li>There is also <code>int</code> that only permits integer numbers, and <code>float</code> for float numbers. If the user try to write a string with the restriction of any of these two types, it will cause an error.
+      </article>
+    </section>
+    
+    <section class='main-section' id='if_statements'>
+      <header id='loops'>
+        <h1>if Statements</h1>
+      </header>
+      <article>
+      <p>if Statements puts some conditions on the program that allows differents paths to run it.
+      <p>Here is an example:
+      <pre>
+  <code>myVar = 5
+    if myVar > 1:
+      print('It is greater than one.')
+    else:
+      print('It is not greater than one.')
+  </code>
+      </pre>
+      <li>The output will be: <span class="output">'It is greater than one'.</span>
+      <li>If myVar is 1 or less, the output would be <span class="output">'It is not greater than one.'</span>
+      </article>
+    </section>
+      
+    <section class='main-section' id='loops'>
+    <header id='loops'>
+    <h1>Loops<h1>  
+    </header>
+    <article>
+    <p>There are two main commands of loops in Python: for and while.
+    <p>A "for" loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+    <p>With the "while" loop we can execute a set of statements as long as a condition is true.
+    <p>Examples of each:
+    <pre>
+      <code>
+   myVar = 0
+   for number in range(1, 6):
+     myVar += number
+   print(myVar)
+      </code>
+    </pre>
+    <li>This code makes so that every number in range from 1 to 5 (the last number in the command does not count) adds up to myVar variable, so the output will be <span class='output'>15</span>.
+    <pre>
+    <code>
+   myVar = 0
+   while True:
+    myVar += 1
+    if myVar == 5:
+      break
+   print(myVar)
+   </code>
+   </pre>
+    <li>This loop example makes myVar variable add + 1 while it is not equal to 5, so when it meets the necessary condition, it breaks the loop, and then print myVar with the output <span class='output'>5</span>.
+      </article>
+    </section>
+  </main>
+</body>
+</html>
