@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  background-color: #C4C4C4;
+  overflow: auto;
+}
+
+nav > h1{
+  margin-left: 8px;
+  font: bold 22px 'Work Sans';
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+nav ul{
+  list-style-type: none;
+  margin: 0 0 0 -10px;
+}
+
+nav a{
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  border-top: solid 1px;
+  font: 400 normal 20px 'Work Sans'
+}
+
+nav a:hover{
+  background-color: black;
+  color: white
+}
+
+.main-section{
+  margin-left: 25%
+}
+
+article{
+  padding-top: 2%;
+  text-indent: 1.2em;
+  line-height: 1.3em;
+  font: 400 normal 16px 'Work Sans';
+}
+
+article > p{
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+article > li{
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.main-section > header > h1{
+  font: bold 25px 'Work Sans';
+}
+
+code{
+  color: #00AF00;
+}
+
+.output{
+  color: #0022CB
+}
+
+@media (max-width: 1230px){
+  nav{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+  }
+  
+  .main-section{
+    margin: 3% 5% 0 15%
+  }
+}
